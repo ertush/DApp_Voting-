@@ -11,6 +11,6 @@ Solidity
 
 ## Info
  
- The smart contaracts are written in solidity
+The smart contracts are written in solidity
 
  

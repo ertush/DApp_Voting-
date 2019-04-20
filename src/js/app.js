@@ -1,4 +1,5 @@
 App = {
+
   web3Provider: null,
   contracts: {},
   account: '0x0',
@@ -44,6 +45,7 @@ App = {
       if (err === null) {
         App.account = account;
         $("#accountAddress").html("Your Account: " + account);
+
       }
     });
 
@@ -75,11 +77,12 @@ App = {
          
         });
       }
-      ///return electionInstance.vote(App.account);
+      //return electionInstance.vote(App.account);
       loader.hide();
       content.show();
     })/*.then(function(hasVoted){
       //Disallow a user to vote
+
         if(hasVoted){
           $('form').hide();
         }
@@ -92,8 +95,8 @@ App = {
       console.warn(error);
     });
   
-  }
-/*
+  },
+
   castVote: function() {
     var candidateId = $('#candidatesSelect').val();
     App.contracts.Election.deployed().then(function(instance) {
@@ -105,9 +108,9 @@ App = {
     }).catch(function(err) {
       console.error(err);
     });
-  },
+  }
 
-  listenForEvents: function() {
+ /*listenForEvents: function() {
   App.contracts.Election.deployed().then(function(instance) {
     instance.votedEvent({}, {
       fromBlock: 0,
@@ -129,10 +132,11 @@ initContract: function() {
 
     App.listenForEvents();
 
-    return App.render();
+    return App.render();td
   });
 }
 */
+
 }
 
 //IIFE
